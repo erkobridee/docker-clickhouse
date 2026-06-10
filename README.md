@@ -35,6 +35,18 @@ Explore how to use the [ClickHouse](https://clickhouse.com/) on a Docker Contain
 
 - [ClickHouse: 5 Practical Examples for Data Analytics | devbyte.space](https://www.devbyte.space/clickhouse-top-5-practical-examples-for-beginers/)
 
+### Materialized views
+
+- [Materialized views | ClickHouse Docs](https://clickhouse.com/docs/materialized-views)
+
+- [What Is a Materialized View and How It Works in ClickHouse | OneUptime Blog](https://oneuptime.com/blog/post/2026-03-31-clickhouse-what-is-a-materialized-view/view)
+
+- [A Guide to Materialized Views in ClickHouse | hypequery](https://hypequery.com/blog/a-guide-to-materialized-views-in-clickhouse)
+
+- [Materialized Views in ClickHouse: Benefits, Limitations, and Alternatives | GlassFlow](https://www.glassflow.dev/blog/clickhouse-materialized-views)
+
+- [Dominate Your Analytics with Materialized Views in ClickHouse | ChistaDATA Inc.](https://chistadata.com/materialized-views-in-clickhouse-2/)
+
 ### Tutorial
 
 - [ClickHouse OSS quick start | ClickHouse Docs](https://clickhouse.com/docs/getting-started/quick-start/oss)
