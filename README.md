@@ -27,7 +27,7 @@ Explore how to use the [ClickHouse](https://clickhouse.com/) on a Docker Contain
 1\. Pull the ClickHouse Docker Image
 
 ```sh
-docker pull clickhouse:26.5
+docker pull clickhouse/clickhouse-server:26.2-alpine
 ```
 
 2\. Run a ClickHouse Container
@@ -42,7 +42,7 @@ docker run -d \
   -p 8123:8123 \
   -p 8443:8443 \
   -p 9000:9000 \
-  clickhouse:26.5
+  clickhouse/clickhouse-server:26.2-alpine
 ```
 
 with Volume
@@ -59,7 +59,7 @@ docker run -d \
   -p 9000:9000 \
   -v clickhouse_data:/var/lib/clickhouse/ \
   -v clickhouse_logs:/var/log/clickhouse-server/ \
-  clickhouse:26.5
+  clickhouse/clickhouse-server:26.2-alpine
 ```
 
 check the Docker volumes ( [doc ref](https://docs.docker.com/reference/cli/docker/volume/ls/) )
