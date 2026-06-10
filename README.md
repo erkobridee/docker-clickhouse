@@ -104,14 +104,21 @@ docker stop test-clickhouse-container
 docker rm -f test-clickhouse-container
 ```
 
+### Docker Compose
+
+1\. run on background
+
+```sh
+docker compose up -d
+```
+
+2\. stop
+
+```sh
+docker compose down
+```
+
 ## Useful references
-
-- [Docker](https://www.docker.com/)
-  - [Use Docker Compose | Docker Docs](https://docs.docker.com/get-started/workshop/08_using_compose/)
-
-  - [Docker Compose | GeeksforGeeks](https://www.geeksforgeeks.org/devops/docker-compose/)
-
-  - [Docker Compose Cheatsheet — Most useful commands with examples | by Rost Glukhov - Medium](https://medium.com/@rosgluk/docker-compose-cheatsheet-most-useful-commands-with-examples-4fbc3d2b5deb)
 
 - [JS client | ClickHouse Docs](https://clickhouse.com/docs/integrations/javascript)
   - [[GitHub] ClickHouse/clickhouse-js](https://github.com/ClickHouse/clickhouse-js)
@@ -121,6 +128,21 @@ docker rm -f test-clickhouse-container
 - [Top 10 best practices tips for ClickHouse | ClickHouse Blog](https://clickhouse.com/blog/10-best-practice-tips)
 
 - [ClickHouse: 5 Practical Examples for Data Analytics | devbyte.space](https://www.devbyte.space/clickhouse-top-5-practical-examples-for-beginers/)
+
+### Docker
+
+- [Docker](https://www.docker.com/)
+  - [Use Docker Compose | Docker Docs](https://docs.docker.com/get-started/workshop/08_using_compose/)
+
+  - [Docker Compose | GeeksforGeeks](https://www.geeksforgeeks.org/devops/docker-compose/)
+
+  - [Docker Compose Cheatsheet — Most useful commands with examples | by Rost Glukhov - Medium](https://medium.com/@rosgluk/docker-compose-cheatsheet-most-useful-commands-with-examples-4fbc3d2b5deb)
+
+- [ClickHouse in Docker: launch analytics in 2 minutes | Sudonull](https://sudonull.com/clickhouse-in-docker-launch-analytics-in-2-minutes)
+
+- [Set Up ClickHouse with Docker Compose | Last9](https://last9.io/blog/set-up-clickhouse-with-docker-compose/)
+
+- [[GitHub] theebruv/openclickhouse](https://github.com/theebruv/openclickhouse) - A complete local ClickHouse setup with Docker Compose, including production-ready configurations, monitoring (Prometheus & Grafana), and sample data.
 
 ### Materialized views
 
