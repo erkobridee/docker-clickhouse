@@ -11,8 +11,98 @@ Explore how to use the [ClickHouse](https://clickhouse.com/) on a Docker Contain
 
   - [Tutorials and example datasets | CLickHouse Docs](https://clickhouse.com:2053/docs/getting-started/example-datasets)
 
+  - [ClickHouse SQL Reference | ClickHouse Docs](https://clickhouse.com/docs/sql-reference)
+
 - [SQL Playground by ClickHouse](https://sql.clickhouse.com/)
   - [[GitHub] ClickHouse/sql.clickhouse.com](https://github.com/ClickHouse/sql.clickhouse.com)
+
+## Commands
+
+### Docker Container
+
+- [clickhouse - Official Image | Docker Hub](https://hub.docker.com/_/clickhouse/)
+  - [Install ClickHouse using Docker | ClickHouse Docs](https://clickhouse.com/docs/install/docker)
+    - [Configuration](https://clickhouse.com/docs/install/docker#configuration)
+
+1\. Pull the ClickHouse Docker Image
+
+```sh
+docker pull clickhouse:26.5
+```
+
+2\. Run a ClickHouse Container
+
+```sh
+docker run -d \
+  --name test-clickhouse-container \
+  -e CLICKHOUSE_USER=admin \
+  -e CLICKHOUSE_PASSWORD=secret \
+  -e CLICKHOUSE_DB=test \
+  --ulimit nofile=262144:262144 \
+  -p 8123:8123 \
+  -p 8443:8443 \
+  -p 9000:9000 \
+  clickhouse:26.5
+```
+
+with Volume
+
+```sh
+docker run -d \
+  --name test-clickhouse-container \
+  -e CLICKHOUSE_USER=admin \
+  -e CLICKHOUSE_PASSWORD=secret \
+  -e CLICKHOUSE_DB=test \
+  --ulimit nofile=262144:262144 \
+  -p 8123:8123 \
+  -p 8443:8443 \
+  -p 9000:9000 \
+  -v clickhouse_data:/var/lib/clickhouse/ \
+  -v clickhouse_logs:/var/log/clickhouse-server/ \
+  clickhouse:26.5
+```
+
+check the Docker volumes ( [doc ref](https://docs.docker.com/reference/cli/docker/volume/ls/) )
+
+```sh
+docker volume ls
+```
+
+check the disk used by Docker ( [doc ref](https://docs.docker.com/reference/cli/docker/system/df/) )
+
+```sh
+docker system df
+```
+
+3\. Connect to ClickHouse
+
+```sh
+docker exec -it test-clickhouse-container clickhouse-client
+```
+
+[Web user interface](https://clickhouse.com/docs/interfaces/http#web-ui): `http://localhost:8123/play`
+
+Test query
+
+```sql
+SELECT 'Hello, ClickHouse!'
+
+SELECT version()
+```
+
+- [ClickHouse OSS quick start | ClickHouse Docs](https://clickhouse.com/docs/getting-started/quick-start/oss)
+
+4\. Stop Container
+
+```sh
+docker stop test-clickhouse-container
+```
+
+5\. Remove Container
+
+```sh
+docker rm -f test-clickhouse-container
+```
 
 ## Useful references
 
@@ -22,9 +112,6 @@ Explore how to use the [ClickHouse](https://clickhouse.com/) on a Docker Contain
   - [Docker Compose | GeeksforGeeks](https://www.geeksforgeeks.org/devops/docker-compose/)
 
   - [Docker Compose Cheatsheet — Most useful commands with examples | by Rost Glukhov - Medium](https://medium.com/@rosgluk/docker-compose-cheatsheet-most-useful-commands-with-examples-4fbc3d2b5deb)
-
-- [clickhouse - Official Image | Docker Hub](https://hub.docker.com/_/clickhouse/)
-  - [Install ClickHouse using Docker | ClickHouse Docs](https://clickhouse.com/docs/install/docker)
 
 - [JS client | ClickHouse Docs](https://clickhouse.com/docs/integrations/javascript)
   - [[GitHub] ClickHouse/clickhouse-js](https://github.com/ClickHouse/clickhouse-js)
