@@ -156,6 +156,8 @@ docker compose down
 
 - [Dominate Your Analytics with Materialized Views in ClickHouse | ChistaDATA Inc.](https://chistadata.com/materialized-views-in-clickhouse-2/)
 
+- [How to use materialized views on clickhouse, please provide data plus examples | Perplexity.ai](https://www.perplexity.ai/search/how-to-use-materialized-views-54LU8aPNSw6j20kf3zMv.A)
+
 ### Tutorial
 
 - [ClickHouse OSS quick start | ClickHouse Docs](https://clickhouse.com/docs/getting-started/quick-start/oss)
