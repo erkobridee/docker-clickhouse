@@ -129,6 +129,9 @@ docker compose down
 
 - [ClickHouse: 5 Practical Examples for Data Analytics | devbyte.space](https://www.devbyte.space/clickhouse-top-5-practical-examples-for-beginers/)
 
+- [ClickHouse SQL Reference Sheet](https://maruthiprithivi.github.io/click_reference_sheet/)
+  - [[GitHub] maruthiprithivi/click_reference_sheet](https://github.com/maruthiprithivi/click_reference_sheet)
+
 ### Docker
 
 - [Docker](https://www.docker.com/)
