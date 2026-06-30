@@ -172,3 +172,5 @@ docker compose down
 - [Beginner’s Guide to ClickHouse: Introduction, Features, and Getting Started | by Suffyan Asad - Medium](https://medium.com/@suffyan.asad1/beginners-guide-to-clickhouse-introduction-features-and-getting-started-55315107399a)
 
 - [2 ClickHouse tutorials: Quick start and large-scale data analysis | Instaclustr](https://www.instaclustr.com/education/clickhouse/2-clickhouse-tutorials-quick-start-and-large-scale-data-analysis/)
+
+- [ClickHouse – Top 5 Practical Examples for Data Analytics and Processing | Devbyte.space](https://www.devbyte.space/clickhouse-top-5-practical-examples-for-beginers/)
